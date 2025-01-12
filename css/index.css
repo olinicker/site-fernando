@@ -89,11 +89,20 @@ main {
   justify-content: center;
   margin: 72px;
 
-  & .musicas a {
+  & .button {
     padding: 20px;
     width: 240px;
     background-color: rgb(43, 43, 43);
     color: white;
+    text-decoration: none;
+    border-radius: 12px;
+  }
+
+  & .button:hover {
+    padding: 20px;
+    width: 240px;
+    background-color: rgb(155, 155, 155);
+    color: rgb(29, 29, 29);
     text-decoration: none;
     border-radius: 12px;
   }
@@ -151,6 +160,7 @@ main {
 
   & .card-banda:hover {
     background-color: rgb(64, 64, 255);
+    color: white;
   }
 
 }
