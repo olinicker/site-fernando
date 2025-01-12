@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(233, 233, 233);
+}
+
+.bg-color-navbar {
+  background-color: rgb(93, 93, 255);
+  border-bottom: 1px solid white;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 24px;
+  padding: 24px;
+  color: white;
+
+  & nav {
+    display: flex;
+    gap: 24px;
+  }
+
+  & a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  & a:hover {
+    background-color: rgb(64, 64, 255);
+
+    border-radius: 24px;
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../assets/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 482px;
+
+  & .foto-perfil {
+    margin-bottom: 35px;
+    width: 250px;
+    height: 250px;
+    background-image: url("../assets/photo.jfif");
+    background-size: cover;
+    border: 5px solid white;
+    border-radius: 50%;
+    display: flex;
+  }
+}
+
+#texto-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: rgba(0, 0, 0, 0.61);
+    padding-block: 24px;
+    width: 100%;
+    color: white;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  justify-content: center;
+  margin: 72px;
+
+  & .musicas a {
+    padding: 20px;
+    width: 240px;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+  }
+
+  & .musicas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  & .bandas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  & .card-banda {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 12px;
+    background-color: rgba(64, 64, 255, 0.336);
+    padding: 32px;
+    border-radius: 12px;
+
+    & .link {
+      display: flex;
+      gap: 8px;
+    }
+
+    & .profile-banda {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    & .foto-banda {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+      background-color: rgb(226, 227, 255);
+      border-radius: 50%;
+    }
+
+    & img {
+      object-fit: cover;
+      display: flex;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+    }
+  }
+
+  & .card-banda:hover {
+    background-color: rgb(64, 64, 255);
+  }
+
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(36, 36, 36);
+  padding: 32px;
+  color: white;
+
+}
+
+@media (max-width: 400px) {
+  #navbar {
+    flex-direction: column;
+    text-align: center;
+
+    & nav {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      text-decoration: underline;
+      gap: 1px;
+    }
+  }
+
+  #texto-banner div {
+    font-size: 1.0rem;
+  }
+
+  #bandas {
+    .card-banda {
+      align-items: center;
+      padding: 20px;
+
+      & .profile-banda {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      & .link {
+        flex-direction: column;
+      }
+    }
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
+}
