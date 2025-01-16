@@ -9,6 +9,8 @@ body {
   background-color: rgb(233, 233, 233);
 }
 
+main {}
+
 .bg-color-navbar {
   background-color: rgb(93, 93, 255);
   border-bottom: 1px solid white;
@@ -197,11 +199,12 @@ footer {
     background-color: rgb(93, 93, 255);
     display: flex;
     width: 100vw;
-    flex-direction: column;
     text-align: center;
+    justify-content: center;
 
     & a {
-      margin-block: 12px;
+      margin-block: 16px;
+      margin-inline: 8px;
       color: white;
       text-decoration: none;
     }
