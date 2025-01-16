@@ -174,21 +174,36 @@ footer {
 
 }
 
+
+@media(min-width: 400px) {
+  .navbar-smathphone {
+    display: none;
+  }
+}
+
+
+
 @media (max-width: 400px) {
+
+  .bg-color-navbar {
+    display: none;
+  }
+
   #navbar {
+    display: none;
+  }
+
+  .navbar-smathphone {
+    background-color: rgb(93, 93, 255);
+    display: flex;
+    width: 100vw;
     flex-direction: column;
     text-align: center;
 
-    & h1 {
-      display: none;
-    }
-
-    & nav {
-      margin-top: 20px;
-      flex-direction: column;
-      font-size: 1.2rem;
-      text-decoration: underline;
-      gap: 1px;
+    & a {
+      margin-block: 12px;
+      color: white;
+      text-decoration: none;
     }
   }
 
