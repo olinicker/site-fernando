@@ -6,23 +6,38 @@
 }
 
 .play-button {
-  background-color: #4CAF50;
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
   color: white;
   border: none;
-  padding: 15px 30px;
+  padding: 15px 35px;
   font-size: 18px;
+  font-weight: bold;
   cursor: pointer;
-  border-radius: 8px;
-  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 12px;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  outline: none;
 }
 
 .play-button:hover {
-  background-color: #45a049;
+  background: linear-gradient(135deg, #45a049, #1B5E20);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .play-button:active {
   transform: scale(0.95);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+
+.play-button svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
 
 body {
   background-color: rgb(233, 233, 233);
