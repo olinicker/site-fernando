@@ -14,6 +14,8 @@
 
 <body>
 
+
+
   <header>
     <div class="bg-color-navbar">
       <section id="navbar">
@@ -45,6 +47,13 @@
   </header>
 
   <main>
+    <audio id="myAudio">
+      <source src="assets/1-Ele é Pai.mp3" type="audio/mp3">
+      Your browser does not support the audio tag.
+    </audio>
+
+    <button id="toggleButton" class="play-button" onclick="toggleAudio()">▶ Tocar Música</button>
+
     <section class="intro" id="intro">
       <h1>Olá, me chamo Fernando Chagas 👋🏻</h1>
       <br>
@@ -272,6 +281,23 @@
     <h3>O passado não volta, mas sempre há tempo para recomeçar!</h3>
     <h4>Fernando Chagas | 2025</h4>
   </footer>
+
+
+  <script>
+    function toggleAudio() {
+      let audio = document.getElementById("myAudio");
+      let button = document.getElementById("toggleButton");
+
+      if (audio.paused) {
+        audio.play();
+        button.innerHTML = "⏸ Pausar Música";
+      } else {
+        audio.pause();
+        button.innerHTML = "▶ Tocar Música";
+      }
+    }
+  </script>
+
 
 </body>
 

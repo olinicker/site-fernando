@@ -5,6 +5,25 @@
   box-sizing: border-box;
 }
 
+.play-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.play-button:hover {
+  background-color: #45a049;
+}
+
+.play-button:active {
+  transform: scale(0.95);
+}
+
 body {
   background-color: rgb(233, 233, 233);
 }
